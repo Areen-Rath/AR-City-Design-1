@@ -9,8 +9,8 @@ AFRAME.registerComponent("atoms", {
             this.createThing(element);
         });
     },
-    getCompounds: function() {
-        return fetch("js/compoundList.json")
+    getThings: function() {
+        return fetch("js/model.json")
             .then(res => res.json())
             .then(data => data);
     },
